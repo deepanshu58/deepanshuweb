@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html>
+<meta content="width=device-width,initial-scale=1.0">
+
+<head> <title> Response web </title> </head>
+
+<style>
+
+body
+{margin-top:10px;}
+
+img{max-width:100%;}
+
+#myheader
+{
+width:99%;
+height:200px;
+background:eal;
+margin:auto;
+}
+
+
+#navbar
+{
+/*menu*/
+width:70%;
+height:40px;
+text-align:center;
+margin:auto;
+}
+
+#navbar ol
+{
+list-style:none;
+}
+
+#navbar ol li
+{
+   display:outline;
+   background:white;
+   padding:10px;
+   margin:10px;
+    box-shadow:10px 5px 10px black;
+   }
+
+#navbar ol li:hover
+{
+    transition:0.50s;
+    background:teal;
+    padding:10px;
+    border-radius:15px;
+                          }
+
+
+#navbar ol li a:link
+{
+   text-decoration:none
+}
+
+#navbar ol li a:visited
+{
+
+}
+
+#navbar ol li a:hover
+{
+   text-decoratrion:underline;
+}
+
+#navbar ol li a:active
+{
+
+
+}
+
+/*break point   */
+
+/* break point for responsive web design */
+
+/*extra small devices (phone, 600px and down) */
+
+@media only screen and (max-width:600px)
+{
+   body{background:purple;}
+   #myheader
+
+   {
+      width:100%;
+      height:200px;
+      
+   }
+
+
+  #myheader img{  width:100%; 
+                    height:100%; } 
+
+   #navbar ol li
+                {display:block; }
+
+   #navbar ol li:hover
+                     {cursor:poitner;
+                        padding:12px;
+                            border-radius:10;
+                                              }
+  }
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width:768px)
+
+{  
+         body{background:brown;}
+
+        #myheader
+                     {width:80%;
+                       height:250px;
+                                     }
+
+             #myheader img{ width:100%;
+                             height:100%;
+                                          }
+              
+   #navbar ol li
+                {display:block; }
+
+   #navbar ol li:hover
+                     {cursor:poitner;
+                        padding:12px;
+                            border-radius:10;
+                                              }
+}
+
+/* styles for desktop computers */
+
+@media only screen and (min-width: 1024px)
+   
+{
+
+ body{background:lightblue;}
+
+      #myheader
+                {width:90%;
+                    height:400px;}
+
+                #myheader img{
+                               width:100%;
+                                           }
+               
+   #navbar ol li
+                {display:block; }
+
+   #navbar ol li:hover
+                     {cursor:poitner;
+                        padding:15px;
+                            border-radius:10;
+                                              }
+
+}
+
+</style>
+ 
+<body>
+
+<div id="myheader">
+
+<img src="picture/bb1.jpg">
+
+</div>
+
+<br/><br/>
+
+<div id="navbar">
+
+<ol>
+<li><a href="">Home</a></li>
+                               
+<li><a href="">Help</a></li>
+
+<li><a href="">About Me</a></li>
+
+</ol>
+
+</div>
+
+</html>

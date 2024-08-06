@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #add{
+        width: 100%;
+        height:500px;
+        box-shadow: 10px 10px 10px gray;
+        background-image: url(images/bor1.jpg);
+        
+    }
+
+
+
+
+
+</style>
+<body>
+    <div id="add">
+
+    </div>
+    <script>
+var d = new Date()
+d.setDate(28)
+
+
+var today = d.getDay()
+
+
+switch(today)
+{case 0:
+    
+    document.write("<h1>today is Sunday</h1>")
+    break;
+
+    case 1:
+    
+    document.write("<h1>today is Monday</h1>")
+    break;
+
+    case 2:
+    
+    document.write("<h1>today is Tuesday</h1>")
+    break;
+
+    case 3:
+    
+    document.write("<h1>today is wedneaday</h1>")
+    break;
+
+    case 4:
+    document.write("<h1>today is thrusday</h1>")
+    break;
+
+    case 5:
+    document.write("<h1>today is Friday</h1>")
+    break;
+
+    case 6:
+    document.write("<h1>today is saturday</h1>")
+    break;
+
+default:}
+
+
+
+
+
+    </script>
+</body>
+</html>
