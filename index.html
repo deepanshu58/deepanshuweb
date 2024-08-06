@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .jumbotron {
+      background-color: #343a40;
+      color: #ffffff;
+    }
+    .feature {
+      padding: 50px 0;
+      background-color: #f8f9fa;
+    }
+    .feature h3 {
+      margin-bottom: 20px;
+    }
+    .feature p {
+      font-size: 18px;
+    }
+    .cta {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+    /* Blue main headings */
+    .blue-heading {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-color: #343a40;
+      color: #ffffff;
+    }
+    .profession {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .blue-heading {
+      color: #007bff;
+    }
+
+    .services .icon-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+}
+
+.services .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.services .icon-box .icon i {
+  color: #47b2e4;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.services .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #37517e;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.services .icon-box:hover h4 a {
+  color: #47b2e4;
+}
+
+.portfolio #portfolio-flters {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  transition: all 0.3s;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item .portfolio-img {
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-img img {
+  transition: all 0.6s;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  z-index: 3;
+  right: 15px;
+  transition: all 0.3s;
+  background: rgba(55, 81, 126, 0.8);
+  padding: 10px 15px;
+}
+
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+  color: #f9fcfe;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 40px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: #47b2e4;
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+  right: 10px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-img img {
+  transform: scale(1.15);
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.red{
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #47b2e4;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #47b2e4;
+}
+
+.reed{ margin-left: 660px;}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(55, 81, 126, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">PORTFOLIO WEBSITE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="uinotes.html">Ui notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="jumbotron jumbotron-fluid text-center text-md-left">
+    <div class="container">
+      <h1 class="display-4 blue-heading">DEEPANSHU PAL</h1>
+     
+      <p class="lead">A platform to showcase our services and expertise.</p>
+    </div>
+  </div>
+
+  
+
+  <!-- About Section -->
+  <section id="about" class="feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="blue-heading">About Us</h3>
+          <p>Focused on typography and illustration, Deepanshu pal sees letters from “another perspective.” This is apparent on his personal website where he showcases an array of different typography examples that pop out. 
+
+
+            Milan has worked with many companies and would like to continue collaborating with more, so he has a Contact form for new clients to reach him. He’s also added essential personal contact info from his side, such as his phone number, email address and links to his social media accounts. 
+            
+            </p>
+
+            Ui-ux designer<br>
+            Graphic designer<br>
+            Developer<br>
+            Freelancer<br>
+            Video editor<br>
+            
+        </div>
+        <div class="col-md-6">
+          <img  width="500px" src="images/deep.jpeg" alt="About Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="">Lorem Ipsum</a></h4>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4><a href="">Sed ut perspici</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-layer"></i></div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  
+  <section id="portfolio" class="feature bg-light py-5"></section>
+  <h2 class="reed">PORTFOLIO</h2>
+  <div class="red"><img src="images/rat.png"></div>
+
+  
+
+  <!-- Resume Section -->
+  <!-- Resume Section -->
+<section id="resume" class="feature bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Resume</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="resume-section">
+            <h3>Contact Information</h3>
+            <ul class="list-unstyled">
+              <li>Email: deepanshugadriya@gmail.com</li>
+              <li>Phone: (+91) 9675354459</li>
+              <li>Behance: <a href="https://www.behance.net/deepanshupal9" target="_blank">/deepanshupal9</a></li>
+            </ul>
+          </div>
+          <div class="resume-section">
+            <h3>Skills</h3>
+            <ul class="list-unstyled">
+              <li>Graphic Designer</li>
+              <li>UI-UX Designer</li>
+              <li>Adobe Photoshop, InDesign, CorelDRAW</li>
+              <li>HTML, CSS</li>
+            </ul>
+          </div>
+          <div class="resume-section">
+            <h3>Education</h3>
+            <ul class="list-unstyled">
+              <li>Diploma in UI-UX Design - Arena Animation, Delhi (August 2024)</li>
+              <li>Bachelor of Arts - CCSU (Choudhary Charan Singh University)</li>
+              <li>XII (CBSE) - BDM Public School, U.P (2021) - 79.3%</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="resume-section">
+            <h3>Experience</h3>
+            <ul class="list-unstyled">
+              <li>Fresher</li>
+            </ul>
+          </div>
+          <div class="resume-section">
+            <h3>Academic Projects</h3>
+            <ul class="list-unstyled">
+              <li><strong>Prem Ratan - Matrimonial App</strong><br>Designing of UI (user interface) in which users interact with the app more friendly and find their perfect partner of life - Figma, Photoshop, Illustrator.</li>
+              <li><strong>Wayfair - A Website For Home Decoration</strong><br>Designing of UI (user interface) of a home decoration website inspired by Amazon, Flipkart, and Stitch.com - Figma, Photoshop, Illustrator.</li>
+              <li>Many Graphic Projects For Portfolio</li>
+              <li>Website Using HTML and CSS</li>
+            </ul>
+          </div>
+          <div class="resume-section">
+            <h3>About Me</h3>
+            <p>Creative and detail-oriented graphic designer and UI-UX designer with a passion for transforming concepts into visually captivating designs proficient in utilizing industry-standard design software to create engaging and impactful visual solutions. Strong communication skills and a keen eye for aesthetics.</p>
+          </div>
+          <div class="resume-section">
+            <h3>Language</h3>
+            <p>English and Hindi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Call to Action Section -->
+  <section class="cta text-center py-5">
+    <div class="container">
+      <h3 class="mb-4">Ready to get started?</h3>
+      <p>Contact us today to discuss your project!</p>
+      <a href="#contact" class="btn btn-lg btn-light">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="feature">
+    <div class="container">
+      <h3 class="text-center mb-4 blue-heading">Contact Us</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Contact Information</h4>
+          <p>Email: info@example.com<br>Phone: +1 234 567 890</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
